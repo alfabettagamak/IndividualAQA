@@ -18,7 +18,9 @@ public class Main {
               if (strItem.equals("d")){
                   index = counter;
                   break;
+                  // comment;
                   // etertretet
+                  //6666
               }
           }
         System.out.println(index);
