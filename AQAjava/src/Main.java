@@ -18,6 +18,7 @@ public class Main {
               if (strItem.equals("d")){
                   index = counter;
                   break;
+                  // comment;
               }
           }
         System.out.println(index);
