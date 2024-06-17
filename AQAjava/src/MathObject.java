@@ -23,7 +23,8 @@ public class MathObject {
         // 2! = 1! * 2
         // 3! = 2! * 3
         if (number == 0) return 1;
-        return number * factorial(number - 1);
+        int fact = number * factorial(number - 1);
+        return fact;
     }
 
     private int sum(int a, int b){
