@@ -1,18 +1,19 @@
 package zombie;
 
-public class Car {
-    private ZombieSherif policemanDriver;
+public class Car<T> {
 
-    public Car(ZombieSherif policemanDriver) {
+    private T policemanDriver;
+
+    public Car(T policemanDriver) {
         this.policemanDriver = policemanDriver;
     }
 
 
-    public void setPolicemanDriver(ZombieSherif policemanDriver) {
+    public void setPolicemanDriver(T policemanDriver) {
         this.policemanDriver = policemanDriver;
     }
 
-    public ZombieSherif getPolicemanDriver() {
+    public T getPolicemanDriver() {
         return policemanDriver;
     }
 }

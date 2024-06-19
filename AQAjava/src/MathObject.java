@@ -1,4 +1,8 @@
+import book.Book;
+
 public class MathObject {
+
+    public static final int someStatic = 0;
 
     private int length;
     private String name;
@@ -41,5 +45,9 @@ public class MathObject {
 
     public void some(Book book){
         System.out.println(book.name);
+    }
+
+    public static void printSome(String result){
+        System.out.println(result);
     }
 }

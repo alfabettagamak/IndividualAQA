@@ -1,3 +1,5 @@
+package book;
+
 public class Book extends MultiPagesPublication{
 
     public int pages;
@@ -11,7 +13,7 @@ public class Book extends MultiPagesPublication{
 
     @Override
     public void open(int pageNUmber){
-        System.out.println("Open on page class Book " + pageNUmber);
+        System.out.println("Open on page class book.Book " + pageNUmber);
         System.out.println("Ostatok " + (this.pages - pageNUmber));
     }
 
