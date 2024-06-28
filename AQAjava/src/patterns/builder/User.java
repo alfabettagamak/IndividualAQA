@@ -1,4 +1,4 @@
-package patterns.singleton.builder;
+package patterns.builder;
 
 public class User {
      public int age;

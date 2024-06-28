@@ -1,10 +1,12 @@
-package qa;
-
-import static qa.LevelEnum.JUNIOR;
+package patterns.factory.qa;
 
 public class AQA implements Employer{
 
     private final float koeff = 1.5f;
+
+    public AQA(LevelEnum level) {
+        this.level = level;
+    }
 
     private LevelEnum level = null;
 
@@ -38,7 +40,7 @@ public class AQA implements Employer{
             case SENIOR:
                 makeAutoTest();
                 codeReview();
-                System.out.println("Teach junior qa");
+                System.out.println("Teach junior");
                 break;
         }
 

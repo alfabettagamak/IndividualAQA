@@ -1,4 +1,4 @@
-package qa;
+package patterns.factory.qa;
 
 public interface Employer {
     public void doWork();

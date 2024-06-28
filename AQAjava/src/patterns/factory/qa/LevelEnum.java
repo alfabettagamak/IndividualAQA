@@ -1,4 +1,4 @@
-package qa;
+package patterns.factory.qa;
 
 public enum LevelEnum {
     JUNIOR("специалист", 1),

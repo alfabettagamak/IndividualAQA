@@ -1,10 +1,12 @@
-package qa;
+package patterns.factory.qa;
 
 import java.util.HashMap;
 
 public abstract class Salary {
 
-    private final Float koeff = 1.05f;
+    protected final Float koeff = 1.05f;
+
+    abstract public Employer createEmployer(LevelEnum level);
 
     public HashMap <LevelEnum, Float> grade;
 
@@ -14,11 +16,4 @@ public abstract class Salary {
         grade.put(LevelEnum.MIDDLE, 2.45f);
         grade.put(LevelEnum.SENIOR, 3.45f);
     }
-
-    public float calculateSalary(Employer employer){
-        float grade = this.grade.get(employer.getLevel());
-        float salary = 100000 * grade * koeff * employer.getKoeff();
-        return salary;
-    }
-
 }

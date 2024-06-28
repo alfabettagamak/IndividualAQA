@@ -1,8 +1,12 @@
-package qa;
+package patterns.factory.qa;
 
 public class QA implements Employer{
 
     private float koeff = 1.05f;
+
+    public QA(LevelEnum level) {
+        this.level = level;
+    }
 
     private LevelEnum level = null;
 
@@ -46,7 +50,6 @@ public class QA implements Employer{
     private void test(){
         System.out.println("Test");
     }
-
 
     private void makeTestCase(){
         System.out.println("Make testCAse");
