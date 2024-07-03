@@ -1,5 +1,7 @@
 package qa;
 
+import java.util.Random;
+
 public enum LevelEnum {
     JUNIOR("специалист", 1),
     MIDDLE("ст. специалист", 2),
@@ -13,4 +15,11 @@ public enum LevelEnum {
     public String value;
     public int koef;
 
+    private static final Random PRNG = new Random();
+
+    public static LevelEnum randomLevel()  {
+        LevelEnum[] level = values();
+        return level[PRNG.nextInt(level.length)];
+    }
 }
+

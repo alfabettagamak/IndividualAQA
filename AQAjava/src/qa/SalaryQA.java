@@ -10,4 +10,9 @@ public class SalaryQA extends Salary{
         return super.calculateSalary(employer);
     }
 
+    public float calculateSalary2(Employer employer){
+        System.out.println(employer.getPosition()+ " "+ employer.getLevel() );
+        System.out.println(employer.getPosition().value + " " + employer.getLevel().value);
+        return super.calculateSalary(employer);
+    }
 }

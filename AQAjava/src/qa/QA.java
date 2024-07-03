@@ -6,8 +6,15 @@ public class QA implements Employer{
 
     private LevelEnum level = null;
 
+    private PositionsEnum position = null;
+
     public LevelEnum getLevel() {
         return level;
+    }
+
+    @Override
+    public PositionsEnum getPosition() {
+        return position;
     }
 
     public void setLevel(LevelEnum level) {
@@ -17,6 +24,10 @@ public class QA implements Employer{
     @Override
     public float getKoeff() {
         return this.koeff;
+    }
+
+    public void setPosition(PositionsEnum position) {
+        this.position = position;
     }
 
     @Override

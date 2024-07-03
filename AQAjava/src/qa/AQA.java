@@ -1,15 +1,20 @@
 package qa;
 
-import static qa.LevelEnum.JUNIOR;
-
 public class AQA implements Employer{
 
     private final float koeff = 1.5f;
 
     private LevelEnum level = null;
 
+    private PositionsEnum position = null;
+
     public LevelEnum getLevel() {
         return level;
+    }
+
+    @Override
+    public PositionsEnum getPosition() {
+        return position;
     }
 
     @Override
@@ -19,6 +24,9 @@ public class AQA implements Employer{
 
     public void setLevel(LevelEnum level) {
         this.level = level;
+    }
+    public void setPosition(PositionsEnum position) {
+        this.position = position;
     }
 
     @Override

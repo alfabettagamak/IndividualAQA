@@ -7,23 +7,42 @@ import java.util.*;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        QA qa = new QA();
-        qa.setLevel(LevelEnum.SENIOR);
+//        QA qa = new QA();
+//        qa.setLevel(LevelEnum.SENIOR);
+//
+//        AQA aqa = new AQA();
+//        aqa.setLevel(LevelEnum.MIDDLE);
+//
+//        Devops devops = new Devops();
+//        devops.setLevel(LevelEnum.JUNIOR);
+//
+//        SalaryQA sqa = new SalaryQA();
+//        float salary = sqa.calculateSalary(aqa);
+//        System.out.println("My salary: " + salary);
+//
+//        SalaryDevops sdevops = new SalaryDevops();
+//        float dsalary = sdevops.calculateSalary(devops);
+//        System.out.println("My salary: " + dsalary);
 
-        AQA aqa = new AQA();
-        aqa.setLevel(LevelEnum.MIDDLE);
 
-        SalaryQA sqa = new SalaryQA();
-        float salary = sqa.calculateSalary(aqa);
-        System.out.println("My salary: " + salary);
-
-        ArrayList <Employer> list = new ArrayList<Employer>();
-        list.add(qa);
-        list.add(aqa);
-        for (Employer emloyer: list){
-            System.out.println("LEVEL: " + emloyer.getLevel());
-            System.out.println("koeff: " + emloyer.getKoeff());
+        ArrayList <Employer> list2 = DataGenerator.generateEmployers();
+        for (Employer employer: list2){
+            SalaryQA sqa = new SalaryQA();
+            float salary = sqa.calculateSalary2(employer);
+            System.out.println("Зарплата равна " + salary);
         }
+
+        System.out.println(list2.toString());
+//
+//
+//        ArrayList <Employer> list = new ArrayList<Employer>();
+//        list.add(qa);
+//        list.add(aqa);
+//        list.add(devops);
+//        for (Employer emloyer: list){
+//            System.out.println("LEVEL: " + emloyer.getLevel());
+//            System.out.println("koeff: " + emloyer.getKoeff());
+//        }
 
 
 //        Zombie zombie = new ClassicZombie();
